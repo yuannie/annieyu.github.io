@@ -1,0 +1,250 @@
+section{
+    width:100vw;
+    padding-top:5%;
+    margin-bottom:10%;
+}
+
+a{
+    text-decoration:none;
+    color:#808284;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    color:#808284;
+    transition:background 1s;
+}
+
+
+.header{
+    padding-left:15%;
+    text-align:right;
+    font-weight: 900;
+    font-size: 5vw;
+}
+
+.description{
+    text-align:left;
+    font-size:1.25vw;
+    line-height: 1.6;
+    padding-top:5%;
+    padding-left:15%;
+    padding-bottom: 2.5%;
+    width:50%;
+}
+
+.subheader{
+    padding-left:15%;
+    font-weight: 900;
+    font-size: 2vw;
+}
+
+.caption{
+    color:#808284;
+    font-size:1.15em;
+    padding-left:15%;
+        
+}
+
+.worklinks{
+    display:inline-grid;
+    font-size:1.15em;
+    margin-left:15%;
+    margin-top:6.5%;
+    width:25%;
+    transition: color 1s;
+}
+
+
+.thumbnails{
+    opacity:0;
+    position:absolute;
+    padding:0%;
+    top:30%;
+    right:0px;
+    width:60%;
+    z-index:-1;
+}
+
+.work{
+    text-align: right;
+}
+
+.banner img{
+    width:80vw;
+    padding:5%;
+    padding-bottom:0%;
+}
+
+.wide img{
+    width:80vw;
+    margin:5%;
+}
+
+
+#centerpiece{
+    position: absolute;
+    top:0%;
+    left:0%;
+    vertical-align: middle;
+    height:100%;
+    z-index: -1;
+}
+
+#aboutHeader{
+    transition: color 1s;
+}
+
+#aboutHeader:hover{
+    color:black;
+    cursor:help;
+}
+
+#headshot{
+    display:none;
+    position:relative;
+    width:45%;
+    margin-left:52.5%;
+    padding-top:0%;
+    z-index:-1;
+    animation-name: headshotMove;
+/*    animation-duration: 4s;*/
+}
+
+/*Paragraph about me*/
+#aboutme{
+    position:absolute;
+    z-index: 10;
+    line-height: 1.5;
+    padding:2.5% 50% 25% 15%;
+    font-size:1.25em;
+}
+
+/*Hello!*/
+#greeting{
+    font-size:5em;
+    font-weight: bold;
+}
+
+/*Back button/arrow*/
+#back{
+    text-decoration: overline;
+    font-size:2em;
+    position:fixed;
+    z-index:1;
+    margin:1.25%;
+    top:8%;
+    transition: color 0.5s;
+}
+
+#back:hover{
+    color:black;
+    transition: color 1s;
+}
+
+/*resume link*/
+#resume{
+    text-decoration: underline;
+    position:relative;
+    transition:font-size 1s;
+}
+#resume:hover{
+    font-size:1.25em;
+    font-weight:bold;
+    color:black;
+    transition:font-size 1s, font-weight 0.5s, color 1s;
+    cursor:help;
+}
+
+#resumeJPG{
+    opacity:0;
+    position:absolute;
+    width:42.5vw;
+    top:130%;
+    left:54.5%;
+    z-index:1;
+    animation-duration:3s;
+}
+
+.highlight{
+background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, #808284 50%);
+  background-position: -0% 0;
+  background-size: 200% auto;
+  text-decoration: none;
+    
+  transition: color 0.5s, background-position 0.5s ease-out;
+
+}
+
+.highlight:hover {
+    cursor:grab;
+    font-weight:900;
+  color: white;
+  background-position: -100% 0;
+}
+
+
+#landingAnnie, #landingYu{
+    position:absolute;
+    right:0px;
+    margin-top:0px;
+    text-align:center;   
+    font-weight: bold;
+    font-size: 5vw;
+}
+
+#landingAnnie:hover, #landingYu:hover{
+    color:black;
+    cursor:s-resize;
+    transition: color 1s;
+}
+
+#landingAnnie{
+    top:40%;
+    right:50%;
+    animation-name:example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#landingYu{
+    top:40%;
+    right:40%;
+    opacity:0;
+    animation-name:example;
+    animation-duration: 4s;
+    animation-delay:3.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+#firstlink{
+    opacity:1;
+    animation: firstlink 1.5s ease 0s infinite alternate;
+}
+
+@keyframes firstlink{
+    from{opacity:1;}
+    to{opacity:0.1;}
+}
+
+@keyframes headshotMove{
+    from{margin-left:100%;}
+    to{margin-left:52.5%;}
+}
+
+
+@keyframes resumeMove{
+    from{left:-50%;}
+    to{left:54.5%;}
+}
+
+@keyframes example {
+    0%   {font-size:0vw; top:-20%; opacity:0;}
+    25%  {font-size:2.5vw; top:-10%; opacity:1;}
+    50%  {font-size:4.5vw; top:40%; color:grey;}
+    75%  {font-size:5vw; top:38%; opacity:1; color:black;}
+    100% {font-size:2.5vw; top:100%; opacity:0;}
+}
