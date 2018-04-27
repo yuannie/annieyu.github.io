@@ -26,22 +26,22 @@ textColorChange("#workHeader", "#straightround", "#D22167", "#F0ECEC");
  
 function lookBack(){
  thumbnailsChange("assets/lookback/banner.png");
- textColorChange("#workHeader", "#lookback", "grey", "white");
+ textColorChange("#workHeader", "#lookback", "#7a535c", "white");
 }     
 
     
-//Resets page, hides thumbnails, header and links go back to grey, and background goes back to white
+//Resets page, hides thumbnails, header and links go back to #7a535c, and background goes back to white
     
 function thumbnailsBack(){
     $(".thumbnails").css("opacity", 0);
     $(".thumbnails").css("transition", "opacity 0.5s");
-    textColorChange("#workHeader", ".worklinks", "#808284", "white");
+    textColorChange("#workHeader", ".worklinks", "#7a535c", "white");
     
     $("#myName").css("opacity",1);
-    $("#aboutHeader").css("color", "#808284");
+    $("#aboutHeader").css("color", "#7a535c");
     $("#aboutHeader").css("opacity",1);
-    $("#myName").css("color", "#808284");
-    $(".header").css("color", "#808284");
+    $("#myName").css("color", "#7a535c");
+    $(".header").css("color", "#7a535c");
 }
 
 //Lowers opacity of all links, returns highlighted link opacity to 1, changes font color of element & element 2, changes background color of page
@@ -75,12 +75,9 @@ function thumbnailsChange(source)
     $(".thumbnails").css("transition", "opacity 0.5s");
 }
 
-$("#workHeader").css("opacity",1);
-    
 //Fades About Header in and out
 $("#aboutHeader").mouseout(function(){$("#workHeader").css("text-decoration", "underline");})
-$("#aboutHeader").mouseover(function(){$("#aboutHeader").css("color", "black"); $("#workHeader").css("text-decoration", "none");});
-$("#aboutHeader").mouseout(function(){$("#aboutHeader").css("color", "#808284")});
+$("#aboutHeader").mouseover(function(){$("#workHeader").css("text-decoration", "none");});
 
     
 //Calls appropriate functions upon mouseovers
@@ -104,7 +101,7 @@ function resumeAppear(){
     $("#resumeJPG").css("animation-name", "resumeMove");
     $("#headshot").css("opacity", 0);
     $("#headshot").css("transition", "opacity 1s");
-    $("body").css("color", "#d3d3d3");  
+    $("body").css("color", "#7a535c");  
     $("body").css("transition", "color 1s");
 }
 function resumeDisappear(){
@@ -112,7 +109,7 @@ function resumeDisappear(){
     $("#headshot").css("transition", "opacity 1s");
     $("#resumeJPG").css("opacity", 0);
     $("#resumeJPG").css("transition", "opacity 0.5s");
-    $("body").css("color", "#808284");  
+    $("body").css("color", "#7a535c");  
     $("body").css("transition", "color 1s");
 }
 $("#resume").mouseover(resumeAppear);

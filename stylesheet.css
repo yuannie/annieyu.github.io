@@ -4,20 +4,28 @@ section{
     margin-bottom:10%;
 }
 
-a{
+a:not(.worklinks){
+    font-weight: 900;
     text-decoration:underline;
-    color:#808284;
+    color:#7a535c;
+    transition:1s;
 }
 
-a:hover{
+a:not(.worklinks):hover{
+    font-size:2vw;
+    font-weight: 900;
     text-decoration: underline;
-    transition:1s;
+}
+
+img:not(.thumbnails){
+    box-shadow: 0px 0px 20px 5px #f7f2f2;
 }
 
 
 body{
+    background-color:#fcf9f9;
     font-family: 'Roboto', sans-serif;
-    color:#808284;
+    color:#7a535c;
     transition:background 1s;
 }
 
@@ -34,15 +42,10 @@ body{
     transition: 1s;
 }
 
-#workHeader:hover{
-    color:black;
+#workHeader:hover, #aboutHeader:hover{
+    cursor:help;
     text-decoration: underline;
 }
-
-#aboutHeader:hover{
-    text-decoration: underline;
-}
-
 .description{
     text-align:left;
     font-size:1.25vw;
@@ -60,13 +63,13 @@ body{
 }
 
 .caption{
-    color:#808284;
     font-size:1.15vw;
     padding-left:15%;
         
 }
 
 .worklinks{
+    color:#7a535c;
     text-decoration: none;
     display:inline-grid;
     font-size:1.2vw;
@@ -74,6 +77,10 @@ body{
     margin-top:6.5%;
     width:20%;
     transition: color 1s;
+}
+
+.worklinks:hover{
+    text-decoration: underline;
 }
 
 
@@ -93,8 +100,8 @@ body{
 
 .banner img{
     width:80vw;
-    padding:5%;
-    padding-bottom:0%;
+    margin:5%;
+    margin-bottom:0%;
 }
 
 .wide img{
@@ -112,14 +119,6 @@ body{
     z-index: -1;
 }
 
-#aboutHeader{
-    transition: color 1s;
-}
-
-#aboutHeader:hover{
-    color:black;
-    cursor:help;
-}
 
 #headshot{
     display:none;
@@ -138,7 +137,7 @@ body{
     z-index: 10;
     line-height: 1.5;
     padding:2.5% 50% 25% 15%;
-    font-size:1.25vw;
+    font-size:1.5vw;
 }
 
 /*Hello!*/
@@ -159,7 +158,7 @@ body{
 }
 
 #back:hover{
-    color:black;
+    color:#3a272b;
     transition: color 1s;
 }
 
@@ -168,13 +167,12 @@ body{
     font-weight: bold;
     text-decoration: underline;
     position:relative;
-    font-size:1.2vw;
     transition:1s;
 }
 #resume:hover{
     font-size:2vw;
     font-weight:bold;
-    color:black;
+    color:#3a272b;
     cursor:help;
 }
 
@@ -189,7 +187,7 @@ body{
 }
 
 .highlight{
-background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, #808284 50%);
+background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, #7a535c 50%);
   background-position: -0% 0;
   background-size: 200% auto;
   text-decoration: none;
@@ -215,33 +213,6 @@ background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, #808284 50%
     font-size: 5vw;
 }
 
-#landingAnnie:hover, #landingYu:hover{
-    color:black;
-    cursor:s-resize;
-    transition: color 1s;
-}
-
-#landingAnnie{
-    top:40%;
-    right:50%;
-    animation-name:example;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-
-#landingYu{
-    top:40%;
-    right:40%;
-    opacity:0;
-    animation-name:example;
-    animation-duration: 4s;
-    animation-delay:3.5s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-
-
 #firstlink{
     opacity:1;
     animation: firstlink 1.5s ease 0s infinite alternate;
@@ -266,7 +237,7 @@ background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, #808284 50%
 @keyframes example {
     0%   {font-size:0vw; top:-20%; opacity:0;}
     25%  {font-size:2.5vw; top:-10%; opacity:1;}
-    50%  {font-size:4.5vw; top:40%; color:grey;}
+    50%  {font-size:4.5vw; top:40%; color:#7a535c;}
     75%  {font-size:5vw; top:38%; opacity:1; color:black;}
     100% {font-size:2.5vw; top:100%; opacity:0;}
 }
