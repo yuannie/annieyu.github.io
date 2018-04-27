@@ -46,7 +46,6 @@ function thumbnailsBack(){
 
 //Lowers opacity of all links, returns highlighted link opacity to 1, changes font color of element & element 2, changes background color of page
 function textColorChange(element, element2, color, bgcolor){
-    toWhite();
     $(".worklinks").css("opacity", 0.15);
     $("#myName").css("opacity", 0.15);
     $("#aboutHeader").css("opacity", 0.15);  
@@ -61,11 +60,6 @@ function textColorChange(element, element2, color, bgcolor){
 
     
 //Makes links white before fading
-
-function toWhite(){
-    $(".worklinks").css("color", "white");
-    $(".header").css("color","white");
-}
     
 //Changes thumbnails and shows them
 function thumbnailsChange(source)
