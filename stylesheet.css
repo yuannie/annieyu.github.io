@@ -5,9 +5,15 @@ section{
 }
 
 a{
-    text-decoration:none;
+    text-decoration:underline;
     color:#808284;
 }
+
+a:hover{
+    text-decoration: underline;
+    transition:1s;
+}
+
 
 body{
     font-family: 'Roboto', sans-serif;
@@ -20,7 +26,21 @@ body{
     padding-left:15%;
     text-align:right;
     font-weight: 900;
-    font-size: 5vw;
+    font-size: 3vw;
+}
+
+#workHeader, #workHeader:hover{
+    text-decoration: underline;
+    transition: 1s;
+}
+
+#workHeader:hover{
+    color:black;
+    text-decoration: underline;
+}
+
+#aboutHeader:hover{
+    text-decoration: underline;
 }
 
 .description{
@@ -41,17 +61,18 @@ body{
 
 .caption{
     color:#808284;
-    font-size:1.15em;
+    font-size:1.15vw;
     padding-left:15%;
         
 }
 
 .worklinks{
+    text-decoration: none;
     display:inline-grid;
-    font-size:1.15em;
+    font-size:1.2vw;
     margin-left:15%;
     margin-top:6.5%;
-    width:25%;
+    width:20%;
     transition: color 1s;
 }
 
@@ -117,19 +138,19 @@ body{
     z-index: 10;
     line-height: 1.5;
     padding:2.5% 50% 25% 15%;
-    font-size:1.25em;
+    font-size:1.25vw;
 }
 
 /*Hello!*/
 #greeting{
-    font-size:5em;
+    font-size:5vw;
     font-weight: bold;
 }
 
 /*Back button/arrow*/
 #back{
     text-decoration: overline;
-    font-size:2em;
+    font-size:2vw;
     position:fixed;
     z-index:1;
     margin:1.25%;
@@ -144,15 +165,16 @@ body{
 
 /*resume link*/
 #resume{
+    font-weight: bold;
     text-decoration: underline;
     position:relative;
-    transition:font-size 1s;
+    font-size:1.2vw;
+    transition:1s;
 }
 #resume:hover{
-    font-size:1.25em;
+    font-size:2vw;
     font-weight:bold;
     color:black;
-    transition:font-size 1s, font-weight 0.5s, color 1s;
     cursor:help;
 }
 

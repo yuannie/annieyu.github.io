@@ -6,7 +6,7 @@ $(document).ready(function(){
 //Each function links to it's appropriate work link and changes the thumbnail, color of unhighlighted links, and then header & highlighted link color, then background color   
 function sep(){
     thumbnailsChange("assets/SEP/SEP_Bird.gif");
-    textColorChange("#workHeader", "#sep", "#39BCA9", "#FCB125");
+    textColorChange("#workHeader", "#sep", "#39BCA9", "#FFC44D");
 }
 
 function resumesMake(){
@@ -16,7 +16,7 @@ function resumesMake(){
 
 function fatPug(){
     thumbnailsChange("assets/fatpug/startscreen.gif");
-    textColorChange("#workHeader", "#fatpug", "#FBAD17", "#F37A60");
+    textColorChange("#workHeader", "#fatpug", "#0095A4", "#F37A60");
 }    
 
 function straightRound(){
@@ -26,7 +26,7 @@ textColorChange("#workHeader", "#straightround", "#D22167", "#F0ECEC");
  
 function lookBack(){
  thumbnailsChange("assets/lookback/banner.png");
- textColorChange("#workHeader", "#lookback", "#3A252E", "white");
+ textColorChange("#workHeader", "#lookback", "grey", "white");
 }     
 
     
@@ -37,27 +37,34 @@ function thumbnailsBack(){
     $(".thumbnails").css("transition", "opacity 0.5s");
     textColorChange("#workHeader", ".worklinks", "#808284", "white");
     
-    
-    $("#aboutHeader").css("opacity",1);
+    $("#myName").css("opacity",1);
     $("#aboutHeader").css("color", "#808284");
+    $("#aboutHeader").css("opacity",1);
+    $("#myName").css("color", "#808284");
+    $(".header").css("color", "#808284");
 }
 
 //Lowers opacity of all links, returns highlighted link opacity to 1, changes font color of element & element 2, changes background color of page
 function textColorChange(element, element2, color, bgcolor){
     toWhite();
     $(".worklinks").css("opacity", 0.15);
-    $("#aboutHeader").css("opacity",0.1);
+    $("#myName").css("opacity", 0.15);
+    $("#aboutHeader").css("opacity", 0.15);  
+    
     $(element2).css("opacity", 1);
     $(element).css("color", color);
     $(element2).css("color", color);
     $("body").css("background", bgcolor);
     $("body").css("transition", "background 1s");
+    
 }
 
+    
 //Makes links white before fading
+
 function toWhite(){
     $(".worklinks").css("color", "white");
-    $("#aboutHeader").css("color","white");
+    $(".header").css("color","white");
 }
     
 //Changes thumbnails and shows them
@@ -68,9 +75,13 @@ function thumbnailsChange(source)
     $(".thumbnails").css("transition", "opacity 0.5s");
 }
 
+$("#workHeader").css("opacity",1);
+    
 //Fades About Header in and out
-$("#aboutHeader").mouseover(function(){$("#aboutHeader").css("color", "black")});
+$("#aboutHeader").mouseout(function(){$("#workHeader").css("text-decoration", "underline");})
+$("#aboutHeader").mouseover(function(){$("#aboutHeader").css("color", "black"); $("#workHeader").css("text-decoration", "none");});
 $("#aboutHeader").mouseout(function(){$("#aboutHeader").css("color", "#808284")});
+
     
 //Calls appropriate functions upon mouseovers
 $("#sep").mouseover(sep);
