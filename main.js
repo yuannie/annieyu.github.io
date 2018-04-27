@@ -48,7 +48,9 @@ function thumbnailsBack(){
 function textColorChange(element, element2, color, bgcolor){
     $(".worklinks").css("opacity", 0.15);
     $("#myName").css("opacity", 0.15);
-    $("#aboutHeader").css("opacity", 0.15);  
+    $("#aboutHeader").css("opacity", 0.15);
+    $(".header:not(#workHeader)").css("color", "white");
+    $(".worklinks").css("color", "white");
     
     $(element2).css("opacity", 1);
     $(element).css("color", color);
