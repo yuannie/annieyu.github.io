@@ -3,6 +3,7 @@ $(document).ready(function(){
         section : "section",
     });
 
+//Preload Thumbnails
     $.fn.preload = function() {
     this.each(function(){
         $('<img/>')[0].src = this;
@@ -10,7 +11,7 @@ $(document).ready(function(){
 }
 
 $(['assets/SEP/SEP_Bird.gif','assets/resumesmake/board.jpg','assets/fatpug/startscreen.gif', 'assets/straightround/straightround2.png', 'assets/lookback/banner.png']).preload();
-    
+
 //Each function links to it's appropriate work link and changes the thumbnail, color of unhighlighted links, and then header & highlighted link color, then background color   
 function sep(){
     thumbnailsChange("assets/SEP/SEP_Bird.gif");
@@ -43,7 +44,7 @@ function lookBack(){
 function thumbnailsBack(){
     $(".thumbnails").css("opacity", 0);
     $(".thumbnails").css("transition", "opacity 0.5s");
-    textColorChange("#workHeader", ".worklinks", "#7a535c", "white");
+    textColorChange("#workHeader", ".worklinks", "#7a535c", "whitesmoke");
     
     $("#myName").css("opacity",1);
     $("#aboutHeader").css("color", "#7a535c");
@@ -95,8 +96,9 @@ $("#lookback").mouseover(lookBack);
 $(".worklinks").mouseout(thumbnailsBack); 
     
 //Resets first link opacty animation
-$("#firstlink").mouseover(function(){
+$(".worklinks").mouseover(function(){
     $("#firstlink").css("animation", "none");
+    $("#pointer").css("opacity", 0);
 })
     
 function resumeAppear(){
