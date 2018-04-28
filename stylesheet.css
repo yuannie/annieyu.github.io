@@ -17,13 +17,6 @@ a:not(.worklinks):hover{
     text-decoration: underline;
 }
 
-/*
-img:not(.thumbnails){
-    box-shadow: 0px 0px 20px 5px #f7f4f4;
-}
-*/
-
-
 body{
     background-color:whitesmoke;
     font-family: 'Roboto', sans-serif;
