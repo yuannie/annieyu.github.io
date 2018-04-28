@@ -120,8 +120,8 @@ body{
 #headshot{
     display:none;
     position:relative;
-    width:45%;
-    margin-left:52.5%;
+    width:30%;
+    margin-left:55%;
     padding-top:0%;
     z-index:-1;
     animation-name: headshotMove;
@@ -262,7 +262,7 @@ background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, #7a535c 50%
 
 @keyframes headshotMove{
     from{margin-left:100%;}
-    to{margin-left:52.5%;}
+    to{margin-left:55%;}
 }
 
 
