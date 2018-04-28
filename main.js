@@ -10,7 +10,7 @@ $(document).ready(function(){
     });
 }
 
-$(['assets/SEP/SEP_Bird.gif','assets/resumesmake/board.jpg','assets/fatpug/startscreen.gif', 'assets/straightround/straightround2.png', 'assets/lookback/banner.png']).preload();
+$(['assets/favicon.png', 'assets/SEP/SEP_Bird.gif','assets/resumesmake/board.jpg','assets/fatpug/startscreen.gif', 'assets/straightround/straightround2.png', 'assets/lookback/banner.png']).preload();
 
 //Each function links to it's appropriate work link and changes the thumbnail, color of unhighlighted links, and then header & highlighted link color, then background color   
 function sep(){
