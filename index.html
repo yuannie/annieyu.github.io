@@ -6,8 +6,18 @@
         <link href="https://fonts.googleapis.com/css?family=Barlow:400, 400i,700" rel="stylesheet">
         <script src="main.js"></script>
         <link rel="icon" href="assets/favicon.png" type="image/gif">
+        
+        <script>
+            $(window).load(function(){
+                function preload(arrayOfImages) {
+                $(arrayOfImages).each(function () {
+                $('<img />').attr('src',this).appendTo('body').hide();
+                });
+                }
+                $(['assets/thumbnails/lahacks2.jpg', 'assets/thumbnails/SEP.jpeg','assets/thumbnails/fat.jpg','assets/thumbnails/resumes.jpg','assets/thumbnails/lookback.jpg']).preload();
+            }
+        </script>
     </head>
-    
     <body>
         <div id="header"><a href="index.html" id="name">Annie Yu</a>
         <span id="directory">
