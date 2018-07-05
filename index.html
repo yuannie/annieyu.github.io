@@ -2,56 +2,65 @@
 <html>
     <head>
         <title>Work — Annie Yu</title>
-        <link rel="icon" href="assets/favicon.png" type="image/gif">
-        
-        <script src="jquery-3.2.1.min.js"></script>
-        <script src="node_modules/jquery-scrollify/jquery.scrollify.min.js"></script>
+        <link rel='stylesheet' type='text/css' href='stylesheet.css'>
+        <link href="https://fonts.googleapis.com/css?family=Barlow:400, 400i,700" rel="stylesheet">
         <script src="main.js"></script>
-        <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,900" rel="stylesheet">
-        
+        <link rel="icon" href="assets/favicon.png" type="image/gif">
     </head>
-    <body>                   
-        <section>
-            <img id="pointer" src="assets/hand.png"/>
-            <span class="header"><span id="myName">ANNIE YU</span> / <span id="workHeader">WORK</span> /  <span id="aboutHeader">ABOUT ME</span></span><br/>
-            <span class="caption" style="font-size:.75vw; font-weight:900; opacity: .15;"><i>hover over the links below ↓</i></span>
-            <div id="workSection">
-            <span id="firstlink">
-            <a href="sep.html" class="worklinks" id="sep"><b>SIGMA ETA PI</b>
-            3-d modeling, animation, graphic<br/>
-                2017</a></span>
-            
-            <a href="resumesmake.html" class="worklinks" id="resumesmake">
-            <b>RESUMES MAKE ME SAD</b>
-            board game, graphic<br/>
-            2016</a>
-            
-            <a href="fatpug.html" class="worklinks" id="fatpug">
-            <b>FAT PUG SMALL PUG</b>
-            pixel-art game, javascript<br/>
-            2016</a>           
-
-            <a href="straightround.html" class="worklinks" id="straightround">
-            <b>STRAIGHT AND ROUND</b>
-            processing/java, graphic<br/>
-            2016</a>  
-            
-            <a href="lookback.html" class="worklinks" id="lookback">
-            <b>LOOKBACK</b>
-            3-d modeling, animation, graphic<br/>
-            2016</a>
-                
-            <img class="thumbnails" id="septhumb" src="" alt="SEP"/> 
+    
+    <body>
+        <div id="header"><a href="index.html" id="name">Annie Yu</a>
+        <span id="directory">
+            <a href="index.html">Work</a><a href="about.html">About</a>
+        </span>
+        </div>
+        
+        <a href="lahacks.html"><div class="container">
+            <img src="assets/thumbnails/lahacks2.jpg" alt="thumbnail" class="image">
+            <div class="overlay">
+                <div class="text">LA Hacks, 2018<br/>
+                <div class="subtitle">Branding</div></div>
             </div>
-        </section>
-        <section>
-            <p id="aboutme"><span class="highlight" id="greeting">Hello!</span><br/><i>I'm Annie!</i> A native San Franciscan plopped into sunny Los Angeles. I currently work at <a href="https://tinder.com/" >Tinder</a>, where I'm learning to use design as a way to empathize with and solve problems for other people.<br/><br/> Beyond that, I enjoy <a href="sep.html">3-d modeling</a>, <a href="lookback.html">animation</a>, game-making in Unity and <a href="fatpug.html">Javascript</a>, and illustration! <br/><br/>
-                
-            if you’d like to see what I’ve done on paper, <br/>here’s my <a href="assets/Annie_Yu_Resume_2018.pdf" id="resume">resume.</a> 
-            </p>
-            <img id="headshot"src="assets/me.jpeg" alt="headshot"/>
-            <img id="resumeJPG" src="assets/Annie_Yu_Resume_2018.jpg" alt="resumeJPG"/>
-        </section>
+            
+        </div></a>        
+        
+        <a href="sep.html"><div class="container">
+            <img src="assets/thumbnails/SEP.jpeg" alt="thumbnail" class="image">
+            <div class="overlay">
+                <div class="text">Sigma Eta Pi<br/>
+                <div class="subtitle">Branding</div></div>
+            </div>
+            
+        </div></a>
+        
+        <div class="container">
+            <a href="fat.html"><img src="assets/thumbnails/fat.jpg" alt="thumbnail" class="image">
+            <div class="overlay">
+                <div class="text">Fat Pug, Small Pug
+                <div class="subtitle">Game Design</div></div>
+            </div></a>
+        </div>
+        
+        <div class="container">
+            <a href="resumes.html">
+            <img src="assets/thumbnails/resumes.jpg" alt="thumbnail" class="image">
+            <div class="overlay">
+                <div class="text">Resumes Make Me Sad
+                <div class="subtitle">Game Design</div></div>
+            </div>
+            </a>
+        </div>        
+        
+        <div class="container">
+            <a href="lookback.html">
+            <img src="assets/thumbnails/lookback.jpg" alt="thumbnail" class="image">
+            <div class="overlay">
+                <div class="text">Look Back
+                <div class="subtitle">Motion Graphics</div></div>
+            </div>
+            </a>
+        </div>
+        
     </body>
+
 </html>

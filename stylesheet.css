@@ -1,280 +1,153 @@
-section{
-    width:100vw;
-    padding-top:5%;
-    margin-bottom:10%;
+body{
+    margin:5%;
+    font-size:2vm;
+    color:black;
+    font-family: 'Barlow', sans-serif;
 }
 
-a:not(.worklinks){
-    font-weight: 900;
-    text-decoration:underline;
-    color:#7a535c;
+a{
+    color:black;
+}
+.paragraph{
+    vertical-align: top;
+}
+
+.paragraph a {
+/*    color:#f09100;*/
+    opacity:.5;
     transition:1s;
 }
 
-a:not(.worklinks):hover{
-    font-size:2vw;
-    font-weight: 900;
-    text-decoration: underline;
+a:hover {
+    opacity:1;
 }
 
-body{
-    background-color:whitesmoke;
-    font-family: 'Roboto', sans-serif;
-    color:#72595f;
-    transition:background 1s;
+#header{
+    margin-bottom: 5%;
 }
 
-
-.header{
-    padding-left:15%;
-    text-align:right;
-    font-weight: 900;
-    font-size: 3vw;
+#directory a{
+    color:grey;
+    text-align: right;
+    text-decoration: none;
+    padding-right:2em;
+    transition: color .5s;
 }
 
-#workHeader, #workHeader:hover{
-    text-decoration: underline;
-    transition: 1s;
+#directory a:hover{
+    color:black;
 }
 
-#workHeader:hover, #aboutHeader:hover{
-    cursor:help;
-    text-decoration: underline;
-}
-.description{
-    text-align:left;
-    font-size:1.25vw;
-    line-height: 1.6;
-    padding-top:5%;
-    padding-left:15%;
-    padding-bottom: 2.5%;
-    width:50%;
+#directory{
+    position:absolute;
+    right:5%;
 }
 
-.subheader{
-    padding-left:15%;
-    font-weight: 900;
+#name{
+    text-decoration: none;
+    font-weight: 700;
     font-size: 2vw;
 }
 
-.caption{
-    font-size:1.15vw;
-    padding-left:15%;
-        
+.container {
+  margin:2% 2% 2% 0%;
+  display:inline-grid;
+  position: relative;
+  width: 47.5%;
 }
 
-.worklinks{
-    color:#7a535c;
-    text-decoration: none;
-    display:inline-grid;
-    font-size:1.2vw;
-    margin-left:15%;
-    margin-top:6.5%;
-    width:20%;
-    transition: color 1s;
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
-.worklinks:hover{
-    text-decoration: underline;
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: white;
 }
 
-
-.thumbnails{
-    opacity:0;
-    position:absolute;
-    padding:0%;
-    top:30%;
-    right:0px;
-    width:60%;
-    z-index:-1;
+.container:hover .overlay {
+  opacity: 1;
 }
 
-.banner{
-    margin:5%;
+h1{
+    letter-spacing: 0px;
 }
 
-.banner img{
-    text-align: right;
-    width:80vw;
-    margin:5%;
-    margin-left:11%;
-    margin-bottom:0%;
-}
-
-.wide img{
-    width:80vw;
-    margin:5%;
-}
-
-
-#centerpiece{
-    position: absolute;
-    top:0%;
-    left:0%;
-    vertical-align: middle;
-    height:100%;
-    z-index: -1;
-}
-
-
-#headshot{
-    display:none;
-    position:relative;
-    width:30%;
-    margin-left:55%;
-    padding-top:0%;
-    z-index:-1;
-    animation-name: headshotMove;
-/*    animation-duration: 4s;*/
-}
-
-/*Paragraph about me*/
-#aboutme{
-    position:absolute;
-    z-index: 10;
-    line-height: 1.5;
-    padding:2.5% 50% 25% 15%;
-    font-size:1.5vw;
-}
-
-/*Hello!*/
-#greeting{
-    font-size:5vw;
-    font-weight: bold;
-}
-
-/*Back button/arrow*/
-#back{
-    text-decoration: overline;
-    font-size:2vw;
-    position:fixed;
-    z-index:1;
-    margin:1.25%;
-    top:8%;
-    transition: color 0.5s;
-}
-
-#back:hover{
-    color:#3a272b;
-    transition: color 1s;
-}
-
-/*resume link*/
-#resume{
-    font-weight: bold;
-    text-decoration: underline;
-    position:relative;
-    transition:1s;
-}
-#resume:hover{
-    font-size:2vw;
-    font-weight:bold;
-    color:#3a272b;
-    cursor:help;
-}
-
-#resumeJPG{
-    opacity:0;
-    position:absolute;
-    width:42.5vw;
-    top:130%;
-    left:54.5%;
-    z-index:1;
-    animation-duration:3s;
-}
-
-.highlight{
-background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, #7a535c 50%);
-  background-position: -0% 0;
-  background-size: 200% auto;
-  text-decoration: none;
-    
-  transition: color 0.5s, background-position 0.5s ease-out;
-
-}
-
-.highlight:hover {
-    cursor:grab;
-    font-weight:900;
-  color: white;
-  background-position: -100% 0;
-}
-
-
-#pointer {
-    position:absolute;
-    width:2.5vw;
-    margin-top:16%;
-    margin-left:30%;
-    opacity:1;
-     transform: rotate(-20deg);
-    transition: .25s;
-    animation: glide 1s ease-in-out 0s infinite alternate;
-}
-
-#firstlink{
-    opacity:1;
-    animation: firstlink 1s ease-in-out 0s infinite alternate;
-}
-
-.animatable {
-  visibility: hidden;
-}
-
-/* show objects being animated */
-.animated {
-  visibility: visible;
-  animation-fill-mode: both;
-  animation-duration: 1s;
-  animation-play-state: running;
-}
-
-.block {
-  height: 5em;
-  line-height: 5em;
-  width: 10em;
-  background: #464646;
-  color: #fdfdfd;
+.text {
+  letter-spacing: -2px;
+  font-size: 3vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   text-align: center;
-  margin: 1em auto;
-  text-shadow: 0 0 1px #333; /* so one can see fadeBgColor properly */
-}
-@keyframes fadeInUp {
-	0% {
-		opacity: 0;
-		transform: translateY(20px);
-	}
-
-	100% {
-		opacity: 1;
-		transform: translateY(0);
-	}
-}
-@keyframes firstlink{
-    from{opacity:1;}
-    to{opacity:0.1;}
 }
 
-@keyframes glide{
-    from{top:10%;}
-    to{top:7%;}
+.subtitle{
+    letter-spacing: 1px;
+    padding-top:.5em;
+    text-transform: uppercase;
+    font-weight:700;
+    font-size: 1vw;
 }
 
-@keyframes headshotMove{
-    from{margin-left:100%;}
-    to{margin-left:55%;}
+.column img, .column video{
+    width: 100%;
 }
 
-
-@keyframes resumeMove{
-    from{left:-50%;}
-    to{left:54.5%;}
+.halfcolumn div, .halfcolumn img{
+    display:inline-block;
+    padding-right: 10%;
+    width: 40%;
 }
 
-@keyframes example {
-    0%   {font-size:0vw; top:-20%; opacity:0;}
-    25%  {font-size:2.5vw; top:-10%; opacity:1;}
-    50%  {font-size:4.5vw; top:40%; color:#7a535c;}
-    75%  {font-size:5vw; top:38%; opacity:1; color:black;}
-    100% {font-size:2.5vw; top:100%; opacity:0;}
+.footer{
+    margin-top:5%;   
+    text-align:center;    
+    font-weight: 700;
+
+}
+
+.footer a{
+    padding-right: 2em;
+    opacity:.25;
+    transition: 1s;
+    text-decoration: none;
+    
+}
+
+.footer a:hover{
+    opacity:1;
+}
+
+.firstFadeIn{
+    position: relative;
+    top: 60px;
+    opacity:0;
+}
+
+.hideme
+{
+    
+    margin-top:5%;
+    position: relative;
+    top: 60px;
+    opacity:0;
+}
+
+.fullscreenText {
+    font-size: 3vw;
+    text-align:center;
+    margin: 25% 20% 25% 20%;
 }
