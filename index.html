@@ -1,76 +1,111 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Work — Annie Yu</title>
-        <link rel='stylesheet' type='text/css' href='stylesheet.css'>
-        <link href="https://fonts.googleapis.com/css?family=Barlow:400, 400i,700" rel="stylesheet">
-        <script src="main.js"></script>
-        <link rel="icon" href="assets/favicon.png" type="image/gif">
-        
-        <script>
-            $(window).load(function(){
-                function preload(arrayOfImages) {
-                $(arrayOfImages).each(function () {
-                $('<img />').attr('src',this).appendTo('body').hide();
-                });
+
+<head>
+    <title>Work — Annie Yu</title>
+    <link rel='stylesheet' type='text/css' href='stylesheet.css'>
+    <link href="https://fonts.googleapis.com/css?family=Barlow:400, 400i,700" rel="stylesheet">
+    <script src="main.js"></script>
+    <link rel="icon" href="assets/favicon.png" type="image/gif">
+
+    <script>
+        $(window).load(function() {
+                    function preload(arrayOfImages) {
+                        $(arrayOfImages).each(function() {
+                            $('<img />').attr('src', this).appendTo('body').hide();
+                        });
+                    }
+                    $(['assets/thumbnails/lahacks2.jpg', 'assets/thumbnails/SEP.jpeg', 'assets/thumbnails/fat.jpg', 'assets/thumbnails/resumes.jpg', 'assets/thumbnails/lookback.jpg']).preload();
                 }
-                $(['assets/thumbnails/lahacks2.jpg', 'assets/thumbnails/SEP.jpeg','assets/thumbnails/fat.jpg','assets/thumbnails/resumes.jpg','assets/thumbnails/lookback.jpg']).preload();
-            }
-        </script>
-    </head>
-    <body>
-        <div id="header"><a href="index.html" id="name">Annie Yu</a>
+
+    </script>
+</head>
+
+<body>
+    <div id="header"><a href="index.html" id="name">Annie Yu</a>
         <span id="directory">
             <a href="index.html">Work</a><a href="about.html">About</a>
+            <a href="assets/Annie_Yu_Resume_2018.pdf">Resume</a>
         </span>
-        </div>
-        
-        <a href="lahacks.html"><div class="container">
-            <img src="assets/thumbnails/lahacks2.jpg" alt="thumbnail" class="image">
+    </div>
+
+
+    <div class="container">
+        <a href="locked.html">
+            <img src="assets/thumbnails/badges.jpg" alt="thumbnail" class="image">
             <div class="overlay">
-                <div class="text">LA Hacks, 2018<br/>
-                <div class="subtitle">Branding</div></div>
+                <div class="text">Tinder, Badges<br/>
+                    <div class="subtitle">Product + UI/UX</div>
+                </div>
             </div>
-            
-        </div></a>        
-        
-        <a href="sep.html"><div class="container">
+            </a>
+    </div>
+
+
+
+    <div class="container">
+        <a href="locked.html">
+            <img src="assets/thumbnails/profile.jpg" alt="thumbnail" class="image">
+            <div class="overlay">
+                <div class="text">Tinder, Profile<br/>
+                    <div class="subtitle">Product + UI/UX</div>
+                </div>
+            </div>
+            </a>
+    </div>
+
+
+    <div class="container">
+        <a href="lahacks.html">
+                <img src="assets/thumbnails/lahacks2.jpg" alt="thumbnail" class="image">
+                <div class="overlay">
+                    <div class="text">LA Hacks, 2018<br/>
+                        <div class="subtitle">Branding</div>
+                    </div>
+                </div>]</a>
+    </div>
+
+
+    <a href="sep.html">
+        <div class="container">
             <img src="assets/thumbnails/SEP.jpeg" alt="thumbnail" class="image">
             <div class="overlay">
                 <div class="text">Sigma Eta Pi<br/>
-                <div class="subtitle">Branding</div></div>
+                    <div class="subtitle">Branding</div>
+                </div>
             </div>
-            
-        </div></a>
-        
-        <div class="container">
-            <a href="fat.html"><img src="assets/thumbnails/fat.jpg" alt="thumbnail" class="image">
+
+        </div>
+    </a>
+
+    <div class="container">
+        <a href="fat.html"><img src="assets/thumbnails/fat.jpg" alt="thumbnail" class="image">
             <div class="overlay">
                 <div class="text">Fat Pug, Small Pug
                 <div class="subtitle">Game Design</div></div>
             </div></a>
-        </div>
-        
-        <div class="container">
-            <a href="resumes.html">
+    </div>
+
+    <div class="container">
+        <a href="resumes.html">
             <img src="assets/thumbnails/resumes.jpg" alt="thumbnail" class="image">
             <div class="overlay">
                 <div class="text">Resumes Make Me Sad
                 <div class="subtitle">Game Design</div></div>
             </div>
             </a>
-        </div>        
-        
-        <div class="container">
-            <a href="lookback.html">
+    </div>
+
+    <div class="container">
+        <a href="lookback.html">
             <img src="assets/thumbnails/lookback.jpg" alt="thumbnail" class="image">
             <div class="overlay">
                 <div class="text">Look Back
                 <div class="subtitle">Motion Graphics</div></div>
             </div>
             </a>
-        </div>
-        
-    </body>
+    </div>
+
+</body>
 
 </html>
