@@ -97,8 +97,9 @@ h1 {
 }
 
 .caption {
+    font-size: 1.25vw;
     position: absolute;
-    top: 30.5%;
+    top: 25%;
     width: 30%;
     line-height: 1.5em;
 }
