@@ -1,6 +1,6 @@
 body {
     margin: 5%;
-    font-size: 2vm;
+    font-size: 2vw;
     color: black;
     font-family: 'Barlow', sans-serif;
 }
@@ -86,7 +86,7 @@ h1 {
 }
 
 .text {
-    letter-spacing: -2px;
+    letter-spacing: -.15vw;
     font-size: 3vw;
     position: absolute;
     top: 50%;
